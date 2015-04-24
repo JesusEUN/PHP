@@ -1,0 +1,12 @@
+<?
+	Session_Start();
+	include_once"./include/date.php";
+	include_once"./include/config.php";
+	include_once"./include/lib.php";
+	include_once"./include/msg.php";
+	include_once"./include/my_sql.php";
+	include_once"./include/dbcon.php";
+	include_once"./include/img.php";
+	include_once"./admin_main.php";
+	sql_close();
+?>

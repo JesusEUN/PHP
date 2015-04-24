@@ -1,0 +1,57 @@
+﻿l,body {font-family: sans-serif; font-size:9pt;color: #000000;height:100%;margin:opx;padding:0px;}
+td {font-size:9pt}
+textarea {font-size:9pt}
+a:link {text-decoration:none; color:#454545}
+a:visited {text-decoration:none; color:#454545}
+a:active {text-decoration:none ;color:#454545}
+a:hover {text-decoration:underline; color:#454545}
+.button{font-size:9px;font-family:Tahoma;BACKGROUND-COLOR: white; BORDER-BOTTOM: gray 1px solid; BORDER-LEFT: gray 1px solid; BORDER-RIGHT: gray 1px solid; BORDER-TOP: gray 1px solid;WIDTH:52px; HEIGHT: 17px}
+.input{font-size:12px;font-family:Tahoma;BACKGROUND-COLOR: white; BORDER-BOTTOM: gray 1px solid; BORDER-LEFT: gray 1px solid; BORDER-RIGHT: gray 1px solid; BORDER-TOP: gray 1px solid; HEIGHT: 17px}
+.login{width:120;font-size: 9pt; border:1 solid #000000;background-color:white;ime-mode:inactive}
+img{border: none;}
+
+.center { width:100%; margin:0 auto;}
+
+#table_box{
+display:table;
+width:100%;
+height:100%;
+}
+#table_cell{
+display:table-cell;
+vertical-align:middle;
+text-align:center;
+}
+
+.css_btn_class {
+	font-size:12px;
+	font-family:Arial;
+	font-weight:normal;
+	-moz-border-radius:0px;
+	-webkit-border-radius:0px;
+	border-radius:0px;
+	border:1px solid #dcdcdc;
+	padding:5px 10px;
+	text-decoration:none;
+	background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
+	background:-ms-linear-gradient( top, #ededed 5%, #dfdfdf 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(5%, #ededed), color-stop(100%, #dfdfdf) );
+	background-color:#ededed;
+	color:#777777;
+	display:inline-block;
+	text-shadow:1px 1px 0px #ffffff;
+ 	-webkit-box-shadow:inset 1px 1px 0px 0px #ffffff;
+ 	-moz-box-shadow:inset 1px 1px 0px 0px #ffffff;
+ 	box-shadow:inset 1px 1px 0px 0px #ffffff;
+}.css_btn_class:hover {
+	background:-moz-linear-gradient( center top, #dfdfdf 5%, #ededed 100% );
+	background:-ms-linear-gradient( top, #dfdfdf 5%, #ededed 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed');
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(5%, #dfdfdf), color-stop(100%, #ededed) );
+	background-color:#dfdfdf;
+}.css_btn_class:active {
+	position:relative;
+	top:1px;
+}
+}﻿

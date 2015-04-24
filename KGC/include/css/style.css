@@ -1,0 +1,8 @@
+body		{font:9pt tahoma,굴림체; color:#222222; line-height:20px;}
+table		{font:9pt tahoma,굴림체; color:#222222; line-height:20px;}
+input		{font:9pt tahoma,굴림체; color:#222222;}
+select	{font:9pt tahoma,굴림체; color:#222222;}
+
+a:link {color:#222222; text-decoration:none; }
+a:visited {color:#222222; text-decoration:none; }
+a:hover {color:5639D5; text-decoration:none; }
