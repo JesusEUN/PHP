@@ -135,7 +135,7 @@
 		     <td><?=$rtel?></td>
 		     <td><?=$rteletc?></td>
 		     <td align="left" style="text-overflow:ellipsis;overflow:hidden;white-space:nowrap;" title="<?=$msg2?>"><?=$msg2?></td>
-		     <td><?=$ordernum?></td>
+		     <td align="left" style="text-overflow:ellipsis;overflow:hidden;white-space:nowrap;" title="<?=$ordernum?>"><?=$ordernum?></td>
 		     <td><?=$itemcode?></td>
 		     <td align="left" style="text-overflow:ellipsis;overflow:hidden;white-space:nowrap;" title="<?=$item?>"><?=$item?></td>
 		     <td><?=$cnt?></td>
@@ -202,7 +202,7 @@
 		  $("#skey").focus();
 		  return false;
 	  }
-	  var url = "<?=$link?>&sub_code=dbList&keyfield="+keyfield+"&skey="+skey;
+	  var url = "<?=$link?>&sub_code=<?=$sub_code?>&keyfield="+keyfield+"&skey="+skey;
 	  window.location = url;
 	  return false;
   }

@@ -205,7 +205,7 @@
 		  $("#skey").focus();
 		  return false;
 	  }
-	  var url = "<?=$link?>&sub_code=dbList&keyfield="+keyfield+"&skey="+skey;
+	  var url = "<?=$link?>&sub_code=<?=$sub_code?>&keyfield="+keyfield+"&skey="+skey;
 	  window.location = url;
 	  return false;
   }

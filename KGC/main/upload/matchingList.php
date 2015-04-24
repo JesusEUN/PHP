@@ -80,7 +80,8 @@
 		  	$sql="\n";
 		  	$sql=$sql."SELECT COUNT(A.INTNUM) CNT \n"; 
 		  	$sql=$sql."FROM TBL_XLS_UPLOAD_DB A \n"; 
-		  	$sql=$sql."     INNER JOIN TBL_EVNT_UPLOAD_DB B ON A.RNAME=B.RNAME AND A.RTEL=B.RTEL AND A.SNAME=B.SNAME AND A.STEL=B.STEL  \n";
+		  	//$sql=$sql."     INNER JOIN TBL_EVNT_UPLOAD_DB B ON A.RNAME=B.RNAME AND A.RTEL=B.RTEL AND A.SNAME=B.SNAME AND A.STEL=B.STEL  \n";
+		  	$sql=$sql."     INNER JOIN TBL_EVNT_UPLOAD_DB B ON A.RNAME=B.RNAME AND A.SNAME=B.SNAME  \n";  // 20150424 박필용 팀장 요청 수정
 		  	$sql=$sql."WHERE A.INTNUM IS NOT NULL ".$sub_query." \n";
 		  	
 		  	$rs    = mysql_query($sql,$db1);
@@ -108,7 +109,8 @@
 		  	$sql="\n";
 		  	$sql=$sql."SELECT A.INTNUM,A.RNAME,A.RADDR,A.RTEL,A.RTELETC,A.ORDERNUM,A.ITEMCODE,A.ITEM,A.CNT,A.SNAME,A.STEL,URL,A.MSG1,A.MSG2,SYN,SDATE,A.WDATE \n";
 		  	$sql=$sql."FROM TBL_XLS_UPLOAD_DB A \n";
-		  	$sql=$sql."     INNER JOIN TBL_EVNT_UPLOAD_DB B ON A.RNAME=B.RNAME AND A.RTEL=B.RTEL AND A.SNAME=B.SNAME AND A.STEL=B.STEL  \n";
+		  	//$sql=$sql."     INNER JOIN TBL_EVNT_UPLOAD_DB B ON A.RNAME=B.RNAME AND A.RTEL=B.RTEL AND A.SNAME=B.SNAME AND A.STEL=B.STEL  \n";
+		  	$sql=$sql."     INNER JOIN TBL_EVNT_UPLOAD_DB B ON A.RNAME=B.RNAME AND A.SNAME=B.SNAME  \n";  // 20150424 박필용 팀장 요청 수정
 		  	$sql=$sql."WHERE A.INTNUM IS NOT NULL ".$sub_query." \n";
 		  	$sql=$sql."ORDER BY A.INTNUM \n";
 		  	$sql=$sql."LIMIT ".$f_article.",".$pagesize." \n";
@@ -151,7 +153,7 @@
 		     <td align="left" style="text-overflow:ellipsis;overflow:hidden;white-space:nowrap;" title="<?=$addr?>"><?=$raddr?></td>
 		     <td><?=$rtel?></td>
 		     <td><?=$rteletc?></td>
-		     <td><?=$ordernum?></td>
+		     <td align="left" style="text-overflow:ellipsis;overflow:hidden;white-space:nowrap;" title="<?=$ordernum?>"><?=$ordernum?></td>
 		     <td><?=$itemcode?></td>
 		     <td align="left" style="text-overflow:ellipsis;overflow:hidden;white-space:nowrap;" title="<?=$item?>"><?=$item?></td>
 		     <td><?=$cnt?></td>

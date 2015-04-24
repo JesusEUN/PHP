@@ -16,7 +16,8 @@ for ($intLoop = 2; $intLoop <= $data->sheets[0]['numRows']; $intLoop++){
     $sendTel        = r($data->sheets[0]['cells'][$intLoop][$intSubLoop++]) ;
     $msg1           = r($data->sheets[0]['cells'][$intLoop][$intSubLoop++]) ;
 
-    if ( $receiveMan !="" && $receiveTel !="" && $sendMan !="" && $sendTel !="" ){ // 널값 또는 공백 값을 제거하기 위해 넣는다.
+    //if ( $receiveMan !="" && $receiveTel !="" && $sendMan !="" && $sendTel !="" ){ // 널값 또는 공백 값을 제거하기 위해 넣는다.
+    if ( $receiveMan !="" && $sendMan !="" ){ // 널값 또는 공백 값을 제거하기 위해 넣는다. // 20150424 박필용 팀장 요청 수정
         // 1. 엑셀을 그대로 DB에 저장한다.
         
         $column = "RNAME='".$receiveMan."',";
@@ -43,7 +44,8 @@ for ($intLoop = 2; $intLoop <= $data->sheets[0]['numRows']; $intLoop++){
         $sql="\n";
         $sql=$sql."SELECT INTNUM \n";
         $sql=$sql."FROM ".$table_name."_DB \n";
-        $sql=$sql."WHERE ( RNAME='".$receiveMan."' AND RTEL='".$receiveTel."' ) AND ( SNAME='".$sendMan."' AND STEL='".$sendTel."' ) \n";
+        //$sql=$sql."WHERE ( RNAME='".$receiveMan."' AND RTEL='".$receiveTel."' ) AND ( SNAME='".$sendMan."' AND STEL='".$sendTel."' ) \n";
+        $sql=$sql."WHERE ( RNAME='".$receiveMan."'  AND SNAME='".$sendMan."'  ) \n"; // 20150424 박필용 팀장 요청 수정
         $rs=mysql_query($sql,$db1);
         $row=mysql_fetch_array($rs);
         if ( !$row[0] ){

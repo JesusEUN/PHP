@@ -144,7 +144,7 @@
 		     <td align="left" style="text-overflow:ellipsis;overflow:hidden;white-space:nowrap;" title="<?=$addr?>"><?=$raddr?></td>
 		     <td><?=$rtel?></td>
 		     <td><?=$rteletc?></td>
-		     <td><?=$ordernum?></td>
+		     <td align="left" style="text-overflow:ellipsis;overflow:hidden;white-space:nowrap;" title="<?=$ordernum?>"><?=$ordernum?></td>
 		     <td><?=$itemcode?></td>
 		     <td align="left" style="text-overflow:ellipsis;overflow:hidden;white-space:nowrap;" title="<?=$item?>"><?=$item?></td>
 		     <td><?=$cnt?></td>
